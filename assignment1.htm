@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<title>assignment 1</title>
+</head>
+
+
+<body bgcolor="#29AF88" topmargin=100 leftmargin=150>
+
+<font size=2 face="Cambria">
+<center>
+navigation:
+<br>
+<a href="#intro">about me</a> - <a href="#contact">contact us</a> - <a href="#portfolio">portfolio</a>
+</center>
+</font>
+
+<br><br>
+
+<font size=6>
+<center id="top">
+Welcome to HTML!
+</center>
+</font>
+
+<font size=4 face="Cambria">
+
+<p>HTML stands for HyperText Markup Language, and it is a programming language used to describe the contents of webpages and what they look like. Ordinarily, a webpage is saved like any other file, but has the extension '.htm' or '.html'. With proper tools, such as JavaScript and CSS, a programmer has powerful methods at their disposal to code an HTML document and give it attractive features.</p>
+
+<div id="intro">
+<b>about me</b>
+<p>I am a student of XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX. I finished my education up to HSC in Mumbai, Maharashtra. I have learnt the following programming languages:
+<ul type="circle">
+<li>BASIC,</li>
+<li>C,</li>
+<li>C++, and</li>
+<li>Python.</li>
+</ul></p>
+<p>I like writing simple programs, and executing and modifying program code till I get the results I want. I am also an avid gamer, and like modifying game files to a small extent to alter gameplay to my liking.</p>
+</div>
+
+<div id="contact">
+<b>contact us</b>
+<p>Having trouble with your HTML code? Not satisfied with the tools you have? Want a good support service? Need to upload your webpages online?</p>
+<p>In case of any issues whatsoever, you can leave a missed call at our official toll-free number, XXXXXXXXXX. We will call you back within 24 hours. Rest assured, we have a good customer service helpline.</p>
+<p>Alternatively, you can <a href="mailto:emailid">send us an email</a> detailing the problems you are facing. Just click the link below to send us a mail, and we will open a support ticket to help you as soon as we are able to.</p>
+<!--The mailto tag is only a placeholder for an official email ID, and is used here for demonstrative purposes.-->
+<p>You can also contact us via the following social networking sites. Just click the link to open our social media page and post a message.
+<br>
+<a href="TwitterAccountPage"><img src="social_network_links/icon_twitter.jpg" width=20 height=20></img></a>
+<a href="FacebookAccountPage"><img src="social_network_links/icon_facebook.jpg" width=20 height=20></img></a>
+<a href="RedditAccountPage"><img src="social_network_links/icon_reddit.jpg" width=20 height=20></img></a>
+<a href="GoogleAccountPage"><img src="social_network_links/icon_google_plus.jpg" width=20 height=20></img></a>
+<!--Note. The web addresses are placeholders for actual links to the profile page of the corresponding social networking site.-->
+</p>
+</div>
+
+<div id="portfolio">
+<b>portfolio</b>
+<br><br>
+<center>
+<table border=1>
+<tr><th width=110>year</th><th width= 110>institution</th><th width=200>achievement</th></tr>
+<tr><td align="center" rowspan=4>2015</td><td align="center">XXXX</td><td align="right">SGPA XXXX</td></tr>
+<tr><td align="center">XXXX</td><td align="right">HSC XXXXX</td></tr>
+<tr><td align="center">--</td><td align="right">JEE Mains XXXXXXX</td></tr>
+<tr><td align="center">--</td><td align="right">JEE Advanced XXXXXXX</td></tr>
+<tr><td align="center" rowspan=2>2014</td><td align="center" rowspan=2>XXXX</td><td align="right">SOF NSO</td></tr>
+<tr><td align="right">SOF IEO</td></tr>
+<tr><td align="center">2013</td><td align="center">XXX</td><td align="right">SSC XXXXX</td></tr>
+<tr><td align="center" rowspan=2>2012</td><td align="center" rowspan=2>XXX</td><td align="right">HTS</td></tr>
+<tr><td align="right">Homi Bhabha level 2</td></tr>
+</table>
+</center>
+</div>
+
+<div>
+<script type="text/javascript">
+
+var i = 0; var path = new Array();
+
+path[0]="sliding_images/image_cpu.gif";
+path[1]="sliding_images/image_motherboard.gif";
+path[2]="sliding_images/image_monitor.gif";
+path[3]="sliding_images/image_keyboard.gif";
+
+function swapimage() 
+{ 
+ document.slide.src = path[i]; 
+ if(i<3) i++; 
+ else i=0; 
+ setTimeout("swapimage()",3000); 
+} 
+window.onload=swapimage; 
+</script>
+
+<br><br>
+
+<center>
+<img height=120 width=120 name="slide" src="sliding_images/image_cpu.jpg" />
+<p>Parts of computers and their servicing, maintenance and new purchases, all at reasonable prices!</p>
+</center>
+</div>
+
+<a href="#top">back to top</a>
+
+</body>
+</html>
